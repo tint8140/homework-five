@@ -1,0 +1,53 @@
+nav {
+    max-width: 980px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+    // margin: 0 auto;
+    justify-content: space-between;
+    border-width: 2px;
+    border-bottom: #000000 solid 2px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    display: flex;
+  
+    .logo {
+      width: 92px;
+      height: 42px;
+      margin-right: auto;
+      text-align: center;
+      background-image: url(../images/logo-black.png);
+    }
+  
+    .links {
+      width: 480px;
+      height: 42px;
+      align-self: center;
+      display: flex;
+      font-size: 15px;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-style: bold;
+        margin: auto;
+        border-right: solid;
+        border-width: 2px;
+        padding-right: 20px;
+        border-color: $site-blue;
+      }
+      #endBorder {
+        border: none;
+      }
+    }
+  }
+  @media only screen and (max-width: 1060px) {
+    nav {
+     
+      min-width: 80%;
+    
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: center;
+    }
+  }
+  

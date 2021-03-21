@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans.ttf);
+}
+nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 20px auto 0 auto;
+  justify-content: space-between;
+  border-width: 2px;
+  border-bottom: #000000 solid 2px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  display: flex;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  margin-right: auto;
+  text-align: center;
+  background-image: url(../images/logo-black.png);
+}
+nav .links {
+  width: 480px;
+  height: 42px;
+  align-self: center;
+  display: flex;
+  font-size: 15px;
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  margin: auto;
+  border-right: solid;
+  border-width: 2px;
+  padding-right: 20px;
+  border-color: #79addc;
+}
+nav .links #endBorder {
+  border: none;
+}
+
+@media only screen and (max-width: 1060px) {
+  nav {
+    min-width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.about .top-section {
+  margin-top: 100px;
+  width: 980px;
+  min-height: 215px;
+  margin-bottom: 30px;
+}
+.about .top-section div {
+  font-size: 60px;
+  font-family: Proxima;
+  font-weight: lighter;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline;
+}
+.about .top-section div .aboutborder {
+  border-bottom: 2px solid black;
+  width: 120%;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+}
+.about .top-section p {
+  margin-top: 40px;
+  font-family: Gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.about .bottom-section {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  max-width: 676px;
+}
+.about .bottom-section div {
+  font-size: 40px;
+  font-family: Proxima;
+  font-weight: lighter;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline;
+}
+.about .bottom-section div .aboutborder {
+  border-bottom: 2px solid black;
+  width: 110%;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+}
+.about .bottom-section .client {
+  margin-top: 40px;
+  min-width: 676px;
+  min-height: 150px;
+  display: flex;
+  margin-bottom: 38px;
+}
+.about .bottom-section .client .client1, .about .bottom-section .client .client2 {
+  width: 260px;
+  height: 150px;
+}
+.about .bottom-section .client .client1 {
+  background-image: url(../images/about-client-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .bottom-section .client .client2 {
+  background-image: url(../images/about-client-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about .bottom-section .client .qoute {
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  padding-left: 25px;
+}
+.about .bottom-section .client .qoute p:last-of-type {
+  margin-bottom: 55px;
+  font-family: Gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.about .bottom-section .client .qoute .name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: Gill;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #79addc;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 980px) {
+  .about {
+    min-width: 80%;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  font-family: Gill;
+  color: #ffffff;
+}
+footer .footer-note {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  margin: auto 151px;
+}
+footer .footer-note .socialmedia {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-note .logo {
+  width: 96px;
+  height: 42px;
+  bottom: 15px;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 1060px) {
+  footer {
+    min-width: 80%;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+  }
+}
